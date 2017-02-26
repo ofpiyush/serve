@@ -30,6 +30,10 @@ func Execute() {
 
 func serveCmd(cmd *cobra.Command, args []string) {
 	var pathStr = "."
+	var port, err = cmd.Flags().GetInt("port")
+	if err != nil {
+		port = 3000
+	}
 
 	if len(args) >= 1 {
 		pathStr = args[0]
@@ -38,7 +42,11 @@ func serveCmd(cmd *cobra.Command, args []string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	serve.Start(absPath, 3000)
+	serve.Start(absPath, port)
+}
+
+func init() {
+	RootCmd.Flags().IntP("port", "p", 3000, "Port on which to serve")
 }
 
 // func init() {
