@@ -1,10 +1,16 @@
-hash: df7d14d940934e925e1dc2311d0cb72dfb89ec0184f9960f9b597b66cfeacf05
-updated: 2017-02-26T17:06:31.481675968+05:30
+hash: b4ee561453ab50ac48f039fa57a284ddcdc3454b383a2df750fd7657f8691b7e
+updated: 2017-03-18T18:03:34.264427262+05:30
 imports:
+- name: github.com/gorilla/websocket
+  version: 3ab3a8b8831546bd18fd182c20687ca853b2bb13
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/jaschaephraim/lrserver
+  version: a6402c59d5edc12bf83c3fa74a1b86dd9b8d6e19
 - name: github.com/spf13/cobra
   version: 99600f6874c95daab762dc2373dc3ee1f6a48575
 - name: github.com/spf13/pflag
   version: 9ff6c6923cfffbcd502984b8e0c80539a94968b7
+- name: gopkg.in/fsnotify.v1
+  version: 629574ca2a5df945712d3079857300b5e4da0236
 testImports: []

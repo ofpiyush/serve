@@ -1,3 +1,9 @@
 package: github.com/ofpiyush/serve
 import:
 - package: github.com/spf13/cobra
+- package: github.com/jaschaephraim/lrserver
+  version: ^3.0.0
+- package: github.com/gorilla/websocket
+  version: ^1.1.0
+- package: gopkg.in/fsnotify.v1
+  version: ^1.4.2
